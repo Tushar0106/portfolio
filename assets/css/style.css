@@ -894,11 +894,14 @@ a:hover {
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+  min-height: 13.5cm; /* Set a minimum height */
+  overflow-x: hidden;
+  overflow-y: auto; /* Add scrollbar if content overflows */
 }
 
 .work-content .w-more {
   color: #4e4e4e;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .work-content .w-more .w-ctegory {
@@ -916,11 +919,22 @@ a:hover {
 }
 
 .work-content .w-like .num-like {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .w-title {
   font-size: 1.2rem;
+}
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 768px) {
+  .w-title {
+    font-size: 1rem;
+  }
+
+  .work-content {
+    padding: 1rem 2% 1rem 3%;
+  }
 }
 
 /*--------------------------------------------------------------
